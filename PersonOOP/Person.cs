@@ -22,12 +22,13 @@ namespace PersonOOP
         public string Nev { get => nev; set => nev = value; }
         public int Kor { get => kor; set => kor = value; }
         public string Nem{ get => nem; set => nem = value; }
-
-        public abstract string bemutatkozas() 
+        public abstract string bemutatkozas();
+        public abstract string getGoal();
+        public override string bemutatkozas() 
         {
             return $"Hi, I'm {this.nev}, a {this.kor} year old {this.nem}.";
         }
-        public abstract string getGoal() 
+        public override string getGoal() 
         { 
             return "My goal is: Live for the moment!";
         }
